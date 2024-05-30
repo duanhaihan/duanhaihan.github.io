@@ -368,6 +368,12 @@ h2.mod-big-title {
     font-size: 0;
     text-align: center;
 }
+h2.student-big-title {
+    height: 90px;
+    line-height: 150px;
+    font-size: 0;
+    text-align: center;
+}
 
 .mod-title-en {
     font-size: 30px;
