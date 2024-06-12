@@ -10,6 +10,26 @@
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/index.css">
     <script src="/js/jquery.js"></script>
+    <style>
+        .email {
+            /* font-weight: bold; */
+            color: #74abdf;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        function copyEmail() {
+            var email = document.getElementById('emailAddress').innerText;
+            var textarea = document.createElement("textarea");
+            textarea.value = email;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("邮箱地址已复制到剪贴板: " + email);
+        }
+    </script>
 </head>
 
 <body>
@@ -68,8 +88,9 @@
                     <div>Artificial Intelligence Research Institute</div>
                     <div>Emotional Intelligence and Pervasive Computing Research Center & Guangdong-Hong Kong-Macao Joint Laboratory for Emotional Intelligence and Pervasive Computing</div>
                     <br>
-                    <div>E-mail: duanhaihan@smbu.edu.cn</div>
-                    <div>Twitter: <a href="https://twitter.com/0xSeAxiAoD?t=fXO9gcbeHWgrTETMtdOSrQ&s=05">@0xSeAxiAoD</a>  <a href="https://twitter.com/0xSeAxiAoD?t=fXO9gcbeHWgrTETMtdOSrQ&s=05"><img src="/images/twitter-logo.png" class="twitter-logo-img"></a></div>
+                    <div>E-mail: <a id="emailAddress" class="email" onclick="copyEmail()">duanhaihan@smbu.edu.cn</a></div>
+                    <br>
+                    <!-- <div>Twitter: <a href="https://twitter.com/0xSeAxiAoD?t=fXO9gcbeHWgrTETMtdOSrQ&s=05">@0xSeAxiAoD</a>  <a href="https://twitter.com/0xSeAxiAoD?t=fXO9gcbeHWgrTETMtdOSrQ&s=05"><img src="/images/twitter-logo.png" class="twitter-logo-img"></a></div> -->
                     <div>Address: International University Park Road, Dayun New Town, Longgang District, Shenzhen, Guangdong Province, P.R. China (518172)</div>
                 </div>
             </div>
@@ -99,6 +120,11 @@
             </div>
             <div>
                 <ul>
+                    <li>
+                        <p style="text-align:justify;">
+                            [Jun. 11, 2024] One technical paper was accepted by IEEE TCSS.
+                        </p>
+                    </li>
                     <li>
                         <p style="text-align:justify;">
                             [Apr. 24, 2024] My Ph.D. Thesis was awrded as Shenzhen City Computer Federation (SZCCF) 2023 Outstanding Doctoral Thesis. Many thanks to my Ph.D. supervisor Prof. Wei Cai and all my collaborators during the tough Ph.D. journey.
@@ -137,85 +163,7 @@
         </div>
 
         <!-- research begin -->
-        <div class="mod-research w1100" data-aos="fade-up">
-            <div class="mod-title">
-                <h1 class="mod-big-title">
-                    <span class="mod-title-en">SERVICES</span>
-                </h1>
-            </div>
-            <div>
-                <ul>
-                    <li>Organizer:
-                        <ul class="mod-sub-list">
-                            <li>Special Session Chair, IEEE International Workshop on Multimedia Signal Processing (IEEE MMSP 2022)</li>
-                        </ul>
-                    </li>
-                </ul>
-                <br>
-                <ul>
-                    <li>Technical Program Committee:
-                        <ul class="mod-sub-list">
-                            <li>ACM International Conference on Multimedia 2022, 2023, 2024 (ACM MM 2022, 2023, 2024)</li>
-                            <li>ACM International Workshop on Network and Operating System Support for Digital Audio and Video 2023, 2024 (NOSSDAV 2023, 2024)</li>
-                            <li>IEEE International Conference on Multimedia and Expo 2022, 2023 (ICME 2022, 2023, 2024)</li>
-                        </ul>
-                    </li>
-                </ul>
-                <br>
-                <ul>
-                    <li>Reviwer:
-                        <p>Academic Journal and Magazine:</span></p>
-                        <ul class="mod-sub-list">
-                            <li>ACM Computing Surveys (CSUR)</li>
-                            <li>ACM Transactions on Multimedia Computing Communications and Applications (TOMM)</li>
-                            <li>IEEE Transactions on Computational Social Systems (TCSS)</li>
-                            <li>IEEE Transactions on Cloud Computing (TCC)</li>
-                            <li>IEEE Transactions on Network Science and Engineering (TNSE)</li>
-                            <li>IEEE Multimedia</li>
-                            <li>IEEE Communications Magazine</li>
-                            <li>IEEE/CAA Journal of Automatica Sinica (JAS)</li>
-                            <li>IEEE Access</li>
-                            <li>International Journal of Human-Computer Interaction (IJHCI)</li>
-                            <li>Scientific Reports</li>
-                            <li>Distributed Ledger Technologies: Research and Practice</li>
-                            <li>Wireless Personal Communications</li>
-                            <li>Data Science and Management</li>
-                        </ul>
-                        <p></p>
-                        <br>
-                        <p>Academic Conference:</span></p>
-                        <ul class="mod-sub-list">
-                            <li>ACM SIGGRAPH 2022, 2023</li>
-                            <li>ACM International Conference on Multimedia 2022, 2023, 2024 (ACM MM 2022, 2023, 2024)</li>
-                            <li>ACM Conference on Human Factors in Computing Systems 2024 (CHI 2024)</li>
-                            <li>ACM International Workshop on Network and Operating System Support for Digital Audio and Video 2023, 2024 (NOSSDAV 2023, 2024)</li>
-                            <li>IEEE International Conference on Multimedia and Expo 2022, 2023 (ICME 2022, 2023, 2024)</li>
-                            <li>IEEE International Conference on Acoustics, Speech and Signal Processing 2023, 2024 (ICASSP 2023, 2024)</li>
-                            <li>IEEE International Workshop on Multimedia Signal Processing 2022 (IEEE MMSP 2022)</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- awards begin -->
-        <div class="mod-awards w1100" data-aos="fade-up">
-            <div class="mod-title">
-                <h1 class="mod-big-title">
-                    <span class="mod-title-en">AWARD AND HONOR</span>
-                </h1>
-            </div>
-            <div class="li-decimal">
-                <ol>
-                    <li>Shenzhen City Computer Federation (SZCCF) 2023 Outstanding Doctoral Thesis Award</li>
-                    <li>PSG Scholarship II, The Chinese University of Hong Kong, Shenzhen.</li>
-                    <li>Second Class Scholarship for Outstanding Students 2019, Sichuan University.</li>
-                    <li>Third Class Scholarship for Outstanding Students 2016, East China Normal University.</li>
-                    <li>Third Class Scholarship for Outstanding Students 2015, East China Normal University.</li>
-                </ol>
-            </div>
-        </div>
-
+        
         <!-- Work begin -->
         <div class="mod-teaching w1100" data-aos="fade-up">
             <div class="mod-title">
@@ -290,6 +238,25 @@
             </div>
         </div>
 
+        <!-- awards begin -->
+        <div class="mod-awards w1100" data-aos="fade-up">
+            <div class="mod-title">
+                <h1 class="mod-big-title">
+                    <span class="mod-title-en">AWARD AND HONOR</span>
+                </h1>
+            </div>
+            <div class="li-decimal">
+                <ol>
+                    <li>Shenzhen City Computer Federation (SZCCF) 2023 Outstanding Doctoral Thesis Award</li>
+                    <li>PSG Scholarship II, The Chinese University of Hong Kong, Shenzhen.</li>
+                    <li>Second Class Scholarship for Outstanding Students 2019, Sichuan University.</li>
+                    <li>Third Class Scholarship for Outstanding Students 2016, East China Normal University.</li>
+                    <li>Third Class Scholarship for Outstanding Students 2015, East China Normal University.</li>
+                </ol>
+            </div>
+        </div>
+
+
         <div class="mod-teaching w1100" data-aos="fade-up">
             <div class="mod-title">
                 <h1 class="mod-big-title">
@@ -298,7 +265,7 @@
             </div>
             <div>
                 <ul>
-                    <li>Feb. 2024 - Jun. 2024: &nbsp; <i><span class="b">Artificial Intelligence – Spring, 2024</span></i>
+                    <li>Feb. 2024 - Jul. 2024: &nbsp; <i><span class="b">Artificial Intelligence – Spring, 2024</span></i>
                         <ul class="mod-sub-list">
                             <li>Department of Engineering, Shenzhen MSU-BIT University</li>
                             <br>
@@ -382,6 +349,68 @@
                 </ul>
             </div>
         </div>
+
+        <div class="mod-research w1100" data-aos="fade-up">
+            <div class="mod-title">
+                <h1 class="mod-big-title">
+                    <span class="mod-title-en">SERVICES</span>
+                </h1>
+            </div>
+            <div>
+                <ul>
+                    <li>Organizer:
+                        <ul class="mod-sub-list">
+                            <li>Special Session Chair, IEEE International Workshop on Multimedia Signal Processing (IEEE MMSP 2022)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <li>Technical Program Committee:
+                        <ul class="mod-sub-list">
+                            <li>ACM International Conference on Multimedia 2022, 2023, 2024 (ACM MM 2022, 2023, 2024)</li>
+                            <li>ACM International Workshop on Network and Operating System Support for Digital Audio and Video 2023, 2024 (NOSSDAV 2023, 2024)</li>
+                            <li>IEEE International Conference on Multimedia and Expo 2022, 2023 (ICME 2022, 2023, 2024)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <li>Reviwer:
+                        <p>Academic Journal and Magazine:</span></p>
+                        <ul class="mod-sub-list">
+                            <li>ACM Computing Surveys (CSUR)</li>
+                            <li>ACM Transactions on Multimedia Computing Communications and Applications (TOMM)</li>
+                            <li>IEEE Transactions on Computational Social Systems (TCSS)</li>
+                            <li>IEEE Transactions on Cloud Computing (TCC)</li>
+                            <li>IEEE Transactions on Network Science and Engineering (TNSE)</li>
+                            <li>IEEE Multimedia</li>
+                            <li>IEEE Communications Magazine</li>
+                            <li>IEEE/CAA Journal of Automatica Sinica (JAS)</li>
+                            <li>IEEE Access</li>
+                            <li>International Journal of Human-Computer Interaction (IJHCI)</li>
+                            <li>Scientific Reports</li>
+                            <li>Distributed Ledger Technologies: Research and Practice</li>
+                            <li>Wireless Personal Communications</li>
+                            <li>Data Science and Management</li>
+                        </ul>
+                        <p></p>
+                        <br>
+                        <p>Academic Conference:</span></p>
+                        <ul class="mod-sub-list">
+                            <li>ACM SIGGRAPH 2022, 2023</li>
+                            <li>ACM International Conference on Multimedia 2022, 2023, 2024 (ACM MM 2022, 2023, 2024)</li>
+                            <li>ACM Conference on Human Factors in Computing Systems 2024 (CHI 2024)</li>
+                            <li>ACM International Workshop on Network and Operating System Support for Digital Audio and Video 2023, 2024 (NOSSDAV 2023, 2024)</li>
+                            <li>IEEE International Conference on Multimedia and Expo 2022, 2023 (ICME 2022, 2023, 2024)</li>
+                            <li>IEEE International Conference on Acoustics, Speech and Signal Processing 2023, 2024 (ICASSP 2023, 2024)</li>
+                            <li>IEEE International Workshop on Multimedia Signal Processing 2022 (IEEE MMSP 2022)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
         <div class="mt70"></div>
     </div>
     <div class="bg-img">
